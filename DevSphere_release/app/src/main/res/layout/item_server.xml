@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="@color/ds_bg_card"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
+
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvServerName"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Server Name" android:textColor="@color/ds_text_primary"
+                android:textSize="15sp" android:textStyle="bold" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="4dp">
+                <TextView android:id="@+id/tvRuntime"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Node.js:3000" android:textColor="@color/ds_text_secondary"
+                    android:textSize="12sp" android:layout_marginEnd="8dp" />
+                <TextView android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="RUNNING" android:textColor="@color/status_running"
+                    android:textSize="11sp" android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton android:id="@+id/btnLogs"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_view"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="@color/ds_text_secondary" />
+        <ImageButton android:id="@+id/btnToggle"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_media_play"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="@color/ds_accent_green" />
+        <ImageButton android:id="@+id/btnDelete"
+            android:layout_width="36dp" android:layout_height="36dp"
+            android:src="@android:drawable/ic_menu_delete"
+            android:backgroundTint="@android:color/transparent"
+            android:tint="@color/ds_accent_red" />
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

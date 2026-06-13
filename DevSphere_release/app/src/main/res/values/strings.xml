@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DevSphere</string>
+    <string name="tagline">The Developer Operating System</string>
+    <string name="by_glypheral">by Glypheral Studios</string>
+
+    <!-- Auth -->
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Create Account</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="continue_github">Continue with GitHub</string>
+    <string name="email_hint">Email address</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Full name</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <!-- Roles -->
+    <string name="role_guest">Guest</string>
+    <string name="role_user">Free</string>
+    <string name="role_developer">Developer</string>
+    <string name="role_admin">Admin</string>
+
+    <!-- Pricing -->
+    <string name="upgrade_title">Upgrade DevSphere</string>
+    <string name="plan_developer">Developer</string>
+    <string name="plan_admin">Admin</string>
+    <string name="price_dev_monthly">$40/mo</string>
+    <string name="price_dev_lifetime">$1,200 one-time</string>
+    <string name="price_admin_monthly">$150/mo</string>
+    <string name="price_admin_lifetime">$2,400 one-time</string>
+    <string name="upgrade_now">Upgrade Now</string>
+    <string name="monthly">Monthly</string>
+    <string name="lifetime">Lifetime</string>
+
+    <!-- Nav -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_browser">Browser</string>
+    <string name="nav_devtools">DevTools</string>
+    <string name="nav_servers">Servers</string>
+    <string name="nav_downloader">Downloader</string>
+    <string name="nav_editor">Code Editor</string>
+    <string name="nav_team">Team</string>
+    <string name="nav_api_keys">API Keys</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_admin">Admin Panel</string>
+
+    <!-- Browser -->
+    <string name="new_tab">New Tab</string>
+    <string name="url_hint">Enter URL or search…</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="history">History</string>
+
+    <!-- Modules -->
+    <string name="servers">Servers</string>
+    <string name="new_server">+ New Server</string>
+    <string name="server_status_running">Running</string>
+    <string name="server_status_stopped">Stopped</string>
+    <string name="download_hls">Download HLS Stream</string>
+    <string name="paste_url">Paste stream URL…</string>
+    <string name="start_download">Start Download</string>
+
+    <!-- Hidden Dev Menu -->
+    <string name="dev_menu_hint">Ctrl+Shift+D to open Dev Menu</string>
+    <string name="hidden_dev_menu">Hidden Dev Menu</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ds_bg_dark">
+
+    <!-- Tab Bar -->
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="40dp">
+        <LinearLayout android:id="@+id/tabContainer"
+            android:layout_width="wrap_content" android:layout_height="40dp"
+            android:orientation="horizontal" android:padding="4dp">
+            <Button android:id="@+id/btnNewTab"
+                android:layout_width="36dp" android:layout_height="32dp"
+                android:text="+" android:textSize="18sp"
+                android:backgroundTint="@color/ds_bg_card"
+                android:textColor="@color/ds_accent_gold"
+                android:padding="0dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- URL Bar + DevTools Button -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="48dp"
+        android:orientation="horizontal" android:background="@color/ds_bg_surface"
+        android:padding="4dp" android:gravity="center_vertical">
+
+        <EditText android:id="@+id/etUrl"
+            android:layout_width="0dp" android:layout_height="38dp"
+            android:layout_weight="1"
+            android:hint="Enter URL or search…"
+            android:background="@drawable/input_bg"
+            android:padding="8dp"
+            android:textColor="@color/ds_text_primary"
+            android:textColorHint="@color/ds_text_muted"
+            android:textSize="14sp"
+            android:inputType="textUri"
+            android:imeOptions="actionGo"
+            android:singleLine="true" />
+
+        <ImageButton android:id="@+id/btnDevTools"
+            android:layout_width="40dp" android:layout_height="38dp"
+            android:src="@android:drawable/ic_menu_manage"
+            android:backgroundTint="@color/ds_bg_card"
+            android:tint="@color/ds_accent_blue"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Progress -->
+    <ProgressBar android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent" android:layout_height="3dp"
+        android:max="100" android:progressTint="@color/ds_accent_gold"
+        android:visibility="gone" />
+
+    <!-- WebView -->
+    <WebView android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- DevTools Panel -->
+    <LinearLayout android:id="@+id/devToolsPanel"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="@color/ds_bg_surface"
+        android:visibility="gone">
+
+        <HorizontalScrollView android:layout_width="match_parent" android:layout_height="36dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="36dp"
+                android:orientation="horizontal">
+                <TextView android:layout_width="80dp" android:layout_height="36dp"
+                    android:text="Inspector" android:gravity="center"
+                    android:textColor="@color/ds_accent_blue" android:textSize="12sp" />
+                <TextView android:layout_width="80dp" android:layout_height="36dp"
+                    android:text="Console" android:gravity="center"
+                    android:textColor="@color/ds_text_secondary" android:textSize="12sp" />
+                <TextView android:layout_width="80dp" android:layout_height="36dp"
+                    android:text="Network" android:gravity="center"
+                    android:textColor="@color/ds_text_secondary" android:textSize="12sp" />
+                <TextView android:layout_width="80dp" android:layout_height="36dp"
+                    android:text="Elements" android:gravity="center"
+                    android:textColor="@color/ds_text_secondary" android:textSize="12sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+            android:layout_weight="1">
+            <TextView android:id="@+id/tvDevToolsOutput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="> DevTools ready\n> Console output will appear here"
+                android:textColor="@color/ds_accent_green"
+                android:textSize="11sp"
+                android:fontFamily="monospace"
+                android:padding="8dp" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

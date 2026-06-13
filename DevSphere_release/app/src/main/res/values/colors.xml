@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand -->
+    <color name="ds_bg_dark">#0D0D0F</color>
+    <color name="ds_bg_surface">#141417</color>
+    <color name="ds_bg_card">#1C1C21</color>
+    <color name="ds_accent_gold">#C9A96E</color>
+    <color name="ds_accent_gold_light">#E8C88A</color>
+    <color name="ds_accent_blue">#4A9EFF</color>
+    <color name="ds_accent_green">#2ECC71</color>
+    <color name="ds_accent_red">#E74C3C</color>
+    <color name="ds_accent_orange">#F39C12</color>
+    <color name="ds_accent_purple">#9B59B6</color>
+    <color name="ds_text_primary">#F0F0F0</color>
+    <color name="ds_text_secondary">#9A9AA8</color>
+    <color name="ds_text_muted">#5A5A6A</color>
+    <color name="ds_border">#2A2A32</color>
+    <color name="ds_divider">#1E1E26</color>
+
+    <!-- Roles -->
+    <color name="role_guest">#5A5A6A</color>
+    <color name="role_user">#4A9EFF</color>
+    <color name="role_developer">#2ECC71</color>
+    <color name="role_admin">#C9A96E</color>
+
+    <!-- Status -->
+    <color name="status_running">#2ECC71</color>
+    <color name="status_stopped">#E74C3C</color>
+    <color name="status_pending">#F39C12</color>
+</resources>

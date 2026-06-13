@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.DevSphere" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ds_accent_gold</item>
+        <item name="colorPrimaryVariant">@color/ds_accent_gold_light</item>
+        <item name="colorOnPrimary">@color/ds_bg_dark</item>
+        <item name="colorSecondary">@color/ds_accent_blue</item>
+        <item name="colorOnSecondary">@color/ds_bg_dark</item>
+        <item name="android:colorBackground">@color/ds_bg_dark</item>
+        <item name="android:windowBackground">@color/ds_bg_dark</item>
+        <item name="android:statusBarColor">@color/ds_bg_dark</item>
+        <item name="android:navigationBarColor">@color/ds_bg_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.DevSphere.Splash" parent="Theme.DevSphere">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.DevSphere.NoActionBar" parent="Theme.DevSphere" />
+</resources>

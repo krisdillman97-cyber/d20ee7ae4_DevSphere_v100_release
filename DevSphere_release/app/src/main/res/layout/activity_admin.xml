@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ds_bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🔐 Admin Panel" android:textColor="@color/ds_accent_gold"
+            android:textSize="22sp" android:textStyle="bold" android:layout_marginBottom="20dp" />
+
+        <!-- User Stats -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="@color/ds_bg_card" app:cardCornerRadius="10dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Users" android:textColor="@color/ds_accent_blue"
+                    android:textSize="13sp" android:textStyle="bold"
+                    android:layout_marginBottom="6dp" />
+                <TextView android:id="@+id/tvUserStats"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Loading…" android:textColor="@color/ds_text_primary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Revenue -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="@color/ds_bg_card" app:cardCornerRadius="10dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Billing Dashboard" android:textColor="@color/ds_accent_gold"
+                    android:textSize="13sp" android:textStyle="bold"
+                    android:layout_marginBottom="6dp" />
+                <TextView android:id="@+id/tvRevenue"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Loading…" android:textColor="@color/ds_accent_green"
+                    android:textSize="16sp" android:textStyle="bold" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Settings -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardBackgroundColor="@color/ds_bg_card" app:cardCornerRadius="10dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Global Settings" android:textColor="@color/ds_text_primary"
+                    android:textSize="13sp" android:textStyle="bold"
+                    android:layout_marginBottom="10dp" />
+                <Switch android:id="@+id/switchMaintenance"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Maintenance Mode"
+                    android:textColor="@color/ds_text_secondary" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Hidden Dev Menu -->
+        <Button android:id="@+id/btnOpenHiddenDevMenu"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="🔐 Open Hidden Dev Menu"
+            android:backgroundTint="@color/ds_bg_card"
+            android:textColor="@color/ds_accent_gold"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Also accessible via Ctrl+Shift+D"
+            android:textColor="@color/ds_text_muted" android:textSize="12sp"
+            android:gravity="center" android:layout_gravity="center" />
+    </LinearLayout>
+</ScrollView>

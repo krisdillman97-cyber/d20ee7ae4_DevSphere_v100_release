@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ds_bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DevSphere"
+            android:textColor="@color/ds_accent_gold"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="by Glypheral Studios"
+            android:textColor="@color/ds_text_secondary"
+            android:textSize="13sp"
+            android:layout_marginBottom="32dp" />
+
+        <TextView android:id="@+id/tvAuthTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/ds_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <LinearLayout android:id="@+id/nameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginBottom="12dp">
+            <EditText android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Full name"
+                android:background="@drawable/input_bg"
+                android:padding="16dp"
+                android:textColor="@color/ds_text_primary"
+                android:textColorHint="@color/ds_text_muted"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <EditText android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Email address"
+            android:background="@drawable/input_bg"
+            android:padding="16dp"
+            android:textColor="@color/ds_text_primary"
+            android:textColorHint="@color/ds_text_muted"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:background="@drawable/input_bg"
+            android:padding="16dp"
+            android:textColor="@color/ds_text_primary"
+            android:textColorHint="@color/ds_text_muted"
+            android:inputType="textPassword"
+            android:layout_marginBottom="20dp" />
+
+        <Button android:id="@+id/btnSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sign In"
+            android:backgroundTint="@color/ds_accent_gold"
+            android:textColor="@color/ds_bg_dark"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="— or —"
+            android:textColor="@color/ds_text_muted"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <Button android:id="@+id/btnGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Sign in with Google"
+            android:backgroundTint="@color/ds_bg_card"
+            android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="12dp" />
+
+        <Button android:id="@+id/btnGitHub"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Continue with GitHub"
+            android:backgroundTint="@color/ds_bg_card"
+            android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="24dp" />
+
+        <TextView android:id="@+id/btnToggleMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New to DevSphere? Sign Up"
+            android:textColor="@color/ds_accent_blue"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/ds_bg_dark">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+
+        <TextView android:id="@+id/tvDevMenuTitle"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="🔐 Hidden Dev Menu"
+            android:textColor="@color/ds_accent_gold" android:textSize="22sp"
+            android:textStyle="bold" android:layout_marginBottom="20dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Module Toggles" android:textColor="@color/ds_text_secondary"
+            android:textSize="12sp" android:textAllCaps="true"
+            android:letterSpacing="0.1" android:layout_marginBottom="12dp" />
+
+        <Switch android:id="@+id/toggleHIT"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="HIT Module" android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="8dp" />
+        <Switch android:id="@+id/toggleCrew"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Crew Orchestrator" android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="8dp" />
+        <Switch android:id="@+id/toggleADR"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="ADR Matrix (8,400+ Agents)" android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="8dp" />
+        <Switch android:id="@+id/toggleDeep"
+            android:layout_width="match_parent" android:layout_height="48dp"
+            android:text="Deep Matrix (Studio)" android:textColor="@color/ds_text_primary"
+            android:layout_marginBottom="20dp" />
+
+        <Button android:id="@+id/btnTermuxBridge"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="Termux Full Bridge"
+            android:backgroundTint="@color/ds_bg_card"
+            android:textColor="@color/ds_accent_green"
+            android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <Button android:id="@+id/btnDeviceApi"
+            android:layout_width="match_parent" android:layout_height="52dp"
+            android:text="Device API Panel"
+            android:backgroundTint="@color/ds_bg_card"
+            android:textColor="@color/ds_accent_blue"
+            android:textStyle="bold" android:layout_marginBottom="12dp" />
+
+        <LinearLayout android:id="@+id/deviceApiPanel"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:visibility="gone"
+            android:background="@color/ds_bg_card" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Device APIs\nCamera ● Sensors ● Location ● Storage\nBluetooth ● NFC ● Vibration"
+                android:textColor="@color/ds_text_secondary" android:textSize="13sp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

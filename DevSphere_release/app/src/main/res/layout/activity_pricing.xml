@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ds_bg_dark">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Upgrade DevSphere" android:textColor="@color/ds_accent_gold"
+            android:textSize="24sp" android:textStyle="bold" android:layout_marginBottom="8dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Choose your plan and billing cycle"
+            android:textColor="@color/ds_text_secondary" android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Billing Toggle -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center"
+            android:layout_marginBottom="24dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Monthly" android:textColor="@color/ds_text_primary"
+                android:textSize="14sp" android:layout_marginEnd="8dp" />
+            <ToggleButton android:id="@+id/toggleBilling"
+                android:layout_width="wrap_content" android:layout_height="36dp"
+                android:textOn="Lifetime" android:textOff="Monthly"
+                android:backgroundTint="@color/ds_accent_gold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Lifetime" android:textColor="@color/ds_text_primary"
+                android:textSize="14sp" android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <!-- Developer Plan Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardDeveloper"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardBackgroundColor="@color/ds_bg_card" app:cardCornerRadius="12dp"
+            app:strokeColor="@color/ds_accent_blue" app:strokeWidth="2dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Developer" android:textColor="@color/ds_accent_blue"
+                    android:textSize="20sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvDevPrice"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="$40/mo" android:textColor="@color/ds_text_primary"
+                    android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="✓ Full browser + DevTools\n✓ Server manager\n✓ HLS/video downloader\n✓ Code editor\n✓ Team collaboration\n✓ Termux terminal"
+                    android:textColor="@color/ds_text_secondary" android:textSize="13sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Admin Plan Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAdmin"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="@color/ds_bg_card" app:cardCornerRadius="12dp"
+            app:strokeColor="@color/ds_accent_gold" app:strokeWidth="0dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Admin" android:textColor="@color/ds_accent_gold"
+                    android:textSize="20sp" android:textStyle="bold" />
+                <TextView android:id="@+id/tvAdminPrice"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="$150/mo" android:textColor="@color/ds_text_primary"
+                    android:textSize="28sp" android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="✓ Everything in Developer\n✓ User management\n✓ Role/permission control\n✓ Billing dashboard\n✓ Global settings\n✓ API key manager (all providers)\n✓ Hidden dev menu\n✓ ADR Matrix / Crew Orchestrator\n✓ Activity feed oversight"
+                    android:textColor="@color/ds_text_secondary" android:textSize="13sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button android:id="@+id/btnCheckout"
+            android:layout_width="match_parent" android:layout_height="56dp"
+            android:text="Subscribe with Stripe"
+            android:backgroundTint="@color/ds_accent_gold"
+            android:textColor="@color/ds_bg_dark"
+            android:textSize="16sp" android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
