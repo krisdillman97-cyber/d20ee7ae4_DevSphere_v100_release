@@ -26,7 +26,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-          cache-dependency-path: '**/package-lock.json'
 
       - name: Install dependencies
         run: |
@@ -35,6 +34,14 @@ jobs:
           elif [ -f package.json ]; then
             npm install
           else
+            echo "No package.json detected. Skipping node dependency installation."
+          fi
+
+      - name: Execute build compilation
+        run: npm run build --if-present
+
+      - name: Execute test automation suite
+        run: npm test --if-present          else
             echo "No package.json detected. Skipping node dependency installation."
           fi
 
